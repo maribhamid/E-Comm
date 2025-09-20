@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 const Sidebar = () => {
-  const [priceRange, setPriceRange] = useState([0, 500]);
-  
+
+  const [price, setPrice] = useState(25.99);
+
   const handlePriceChange = (e) => {
-    setPriceRange([priceRange[0], e.target.value]);
+    setPrice(e.target.value);
   };
 
   return (
@@ -40,13 +41,15 @@ const Sidebar = () => {
         <h4 className="font-bold text-lg mb-2">Prices</h4>
         <div className="price-slider-container">
           <label className="text-sm text-gray-600">
-            Range: ${priceRange[0].toFixed(2)} - ${priceRange[1].toFixed(2)}
+            {/* Displaying a fixed minimum and the dynamic value */}
+            Range: $13.99 - ${parseFloat(price).toFixed(2)}
           </label>
           <input
             type="range"
-            min="0"
+            min="13.99"
             max="500"
-            value={priceRange[1]}
+            step="0.01" // Added step for more precise control
+            value={price}
             onChange={handlePriceChange}
             className="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
@@ -74,11 +77,9 @@ const Sidebar = () => {
           <li className="flex justify-between items-center text-gray-600 mb-1 hover:text-blue-600 cursor-pointer">
             <span>Adidas</span><span className="text-xs text-gray-400">99</span>
           </li>
-
           <li className="flex justify-between items-center text-gray-600 mb-1 hover:text-blue-600 cursor-pointer">
             <span>Nike</span><span className="text-xs text-gray-400">99</span>
           </li>
-
           <li className="flex justify-between items-center text-gray-600 mb-1 hover:text-blue-600 cursor-pointer">
             <span>Siemens</span><span className="text-xs text-gray-400">99</span>
           </li>
