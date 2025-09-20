@@ -45,11 +45,11 @@ const App = () => {
             ))}
           </div>
           <div className="flex justify-center mt-8 space-x-2">
-            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm">1</button>
-            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm">2</button>
-            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm">3</button>
-            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm">4</button>
-            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm">5</button>
+            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-blue-400 hover:cursor-pointer">1</button>
+            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm hover:bg-blue-400 hover:cursor-pointer">2</button>
+            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm hover:bg-blue-400 hover:cursor-pointer">3</button>
+            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm hover:bg-blue-400 hover:cursor-pointer">4</button>
+            <button className="bg-white text-gray-700 font-bold py-2 px-4 rounded-full text-sm hover:bg-blue-400 hover:cursor-pointer">5</button>
           </div>
         </div>
       </main>
