@@ -35,7 +35,7 @@ const Footer = () => {
         <p className="text-sm">E-Comm, 4578 Marmaro Road...</p>
       </div>
       </div>
-      <div className='flex flex-col sm:flex-row gap-70 md:gap-50 lg:gap-70 mb:gap-50 sm:px-0  px-10'>
+      <div className='flex flex-col sm:flex-row gap-70 md:gap-2 0 lg:gap-70 mb:gap-20 sm:px-0  px-10 mb:flex-rowmb:flex-row'>
       <div className="footer-section">
         <h4 className="font-semibold mb-2">Information</h4>
         <ul className="text-sm space-y-1">
