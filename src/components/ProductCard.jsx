@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 

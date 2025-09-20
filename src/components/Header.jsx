@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { FaShoppingCart, FaBars } from 'react-icons/fa';
 import Navbar from './Navbar';
 import logo from '../assets/products/logo.png';

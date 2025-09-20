@@ -1,3 +1,4 @@
+import React from 'react';
 import banner from '../assets/products/banner.png';
 
 const HeroBanner = () => {
